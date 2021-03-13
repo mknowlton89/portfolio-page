@@ -10,7 +10,7 @@ tan #dba274 */
 
 * {
     font-family: Raleway;
-    font-size: 15px;
+    font-size: 16px;
     color: #202425;
     background-color: #fbfbfb;
 }
@@ -19,13 +19,20 @@ header {
     display: flex;
     font-weight: 600;
     align-items: center;
-    /* justify-items: center; */
-    padding: 1%;
+    padding: 1rem;
     justify-content: space-between;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
 nav {
-    padding-right: 1%;
+    padding-right: 1rem;
 }
 
 nav a {
@@ -35,7 +42,7 @@ nav a {
 
 header a {
     text-decoration: none;
-    padding: 0 10px 0 10px
+    padding: 0 10px 0 10px;
 }
 
 header button {
@@ -52,3 +59,30 @@ header h1 {
     justify-content: flex-start;
     font-size: 50px;
 }
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    align-items: center;
+}
+
+.hero img {
+    max-height: 500px;
+}
+
+.hero-left {
+    flex: 60%;
+    padding-left: 3rem;
+    padding-right: 12rem;
+}
+
+.hero-right {
+    flex: 40%;
+}
+
+.hero h1 {
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
