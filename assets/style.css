@@ -15,25 +15,25 @@ tan #dba274 */
     background-color: #fbfbfb;
 }
 
+body {
+    padding: 0 2rem 2rem 2rem;
+}
+
 header {
     display: flex;
     font-weight: 600;
     align-items: center;
-    padding: 1rem;
+    padding-top: 2rem;
     justify-content: space-between;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 p {
     line-height: 1.5rem;
 }
 
-nav {
-    padding-right: 1rem;
-}
+/* nav {
+    padding-right: 2rem;
+} */
 
 nav a {
     font-size: 18px;
@@ -42,11 +42,11 @@ nav a {
 
 header a {
     text-decoration: none;
-    padding: 0 10px 0 10px;
+    padding: 0 40px 0 0px;
 }
 
 header button {
-    padding: 5px 25px;
+    padding: 10px 35px;
     border-radius: 40px;
     border: none;
     background-color: #2024259c;
@@ -63,12 +63,12 @@ header h1 {
 .hero {
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem 0 1rem;
+    padding: 2rem 8rem 5rem 8rem;
     align-items: center;
 }
 
 .hero img {
-    max-height: 500px;
+    max-height: 400px;
 }
 
 .hero-left {
@@ -84,5 +84,42 @@ header h1 {
 .hero h1 {
     font-size: 30px;
     padding-bottom: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 80%;
+    transition: 500ms;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card h2 {
+    font-size: 24px;
+}
+
+.secondary-projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondary-projects .project-card {
+    width: 50%;
+}
+
+footer span {
+    color: red;
 }
 
