@@ -7,12 +7,20 @@ pale green #cbd39d
 dark green #45581c
 tan #dba274 */
 
+:root {
+    --dark-gray: #202425;
+    --off-white: #fbfbfb;
+    --pale-green: #cbd39d;
+    --dark-green: #45581c;
+    --tan: #dba274;
+}
+
 
 * {
     font-family: Raleway;
     font-size: 16px;
-    color: #202425;
-    background-color: #fbfbfb;
+    color: var(--dark-gray);
+    background-color: var(--off-white);
 }
 
 body {
@@ -49,8 +57,8 @@ button {
     padding: 10px 35px;
     border-radius: 40px;
     border: none;
-    background-color: #2024259c;
-    color: #fbfbfb;
+    background-color: var(--dark-gray);
+    color: var(--off-white);
     font-size: 18px;
 }
 
@@ -67,18 +75,21 @@ header h1 {
     align-items: center;
 }
 
-.hero img {
-    max-height: 400px;
-}
-
 .hero-left {
     flex: 60%;
-    padding-left: 3rem;
-    padding-right: 12rem;
+    /* padding-left: 3rem; */
+    padding-right: 5%;
 }
 
 .hero-right {
+    display: flex;
     flex: 40%;
+    padding-left: 5%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -117,7 +128,6 @@ footer {
     box-shadow: 0 0rem 2rem rgb(0 0 0 / 7%);
     border-radius: .8rem;
     margin-bottom: 3rem;
-    /* background-color: transparent; */
 }
 
 .project-img {
@@ -145,7 +155,7 @@ footer {
 }
 
 .project-cta {
-    background-color: #45581c;
+    background-color: var(--dark-green);
 }
 
 .project-card h3 {
@@ -198,7 +208,7 @@ footer {
     flex: 60%;
     flex-direction: column;
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 5%;
 }
 
 .name-email {
@@ -215,14 +225,15 @@ footer {
 }
 
 .contact-image img {
-    max-height: 300px;
     background-color: transparent;
+    width: 75%;
+    height: auto;
 }
 
 input, textarea {
     outline: 0;
     border-width: 0 0 1px;
-    border-color: #20242573;
+    border-color: var(--dark-gray);
     width: 49%;
     height: 40px;
     text-align: left;
@@ -255,3 +266,62 @@ footer span {
     color: red;
 }
 
+@media only screen and (max-width: 900px) {
+    .hero {
+        padding: 2rem 1rem 5rem 1rem;
+    }
+
+    .form {
+        order: 2;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .form {
+        order: 2;
+        width: 80%;
+    }
+
+    .contact-image img {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .hero {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .hero img {
+        width: 70%;
+    }
+
+    .hero-left {
+        padding-right: 0;
+        order: 2;
+    }
+
+    .hero-right {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    /* nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }  */
+
+    .form {
+        width: 95%;
+    }
+
+  }
