@@ -266,6 +266,18 @@ footer span {
     color: red;
 }
 
+
+@media only screen and (max-width: 1100px) {
+    .secondary-projects .project-card {
+        flex-direction: column;
+    }
+
+    .secondary-projects .project-img {
+        transform: translateY(-4rem);
+        width: 90%
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .hero {
         padding: 2rem 1rem 5rem 1rem;
@@ -287,6 +299,7 @@ footer span {
     .contact-image img {
         width: 50%;
     }
+
   }
 
   @media only screen and (max-width: 650px) {
@@ -297,6 +310,7 @@ footer span {
 
     .hero img {
         width: 70%;
+        padding-bottom: 5%;
     }
 
     .hero-left {
@@ -324,4 +338,28 @@ footer span {
         width: 95%;
     }
 
+    .secondary-projects .project-card {
+        width: 90%;
+    }
+
+    .primary-project .project-card {
+        flex-direction: column;
+    }
+
+    .primary-project .project-img {
+        transform: translateY(-4rem);
+        width: 90%
+    }
+
+  }
+
+  @media only screen and (max-width: 635px) {
+      .project-info h3 {
+          padding-top: 5%;
+      }
+
+      /* .secondary-projects {
+          flex-direction: column;
+          justify-content: center;
+      } */
   }
