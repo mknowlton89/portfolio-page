@@ -67,6 +67,7 @@ header h1 {
     justify-content: flex-start;
     font-size: 50px;
     letter-spacing: -3px;
+    /* z-index: 99; */
 }
 
 .hero {
@@ -300,6 +301,52 @@ footer span {
     transform: rotate(45deg) translate(-9px, -6px);
 }
 
+/* .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80vh;
+    display: block;
+    z-index: 98;
+    padding-top: 120px;
+} */
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: fit-content;
+    align-content: space-around;
+    z-index: 98;
+    margin-top: 45px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 100px;
+    padding-bottom: 8%;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* .mobile-nav button {
+    width: fit-content;
+} */
+
 @media only screen and (max-width: 1100px) {
     .secondary-projects .project-card {
         flex-direction: column;
@@ -335,6 +382,16 @@ footer span {
 
   }
 
+  @media only screen and (min-width: 651px) {
+      .mobile-nav {
+          display: none;
+      }
+
+      .hamburger {
+          display: none;
+      }
+  }
+
   @media only screen and (max-width: 650px) {
     .hero {
         flex-direction: column;
@@ -354,11 +411,6 @@ footer span {
     .hero-right {
         padding-left: 0;
         justify-content: center;
-    }
-
-    header {
-        /* flex-direction: column;
-        align-content: center; */
     }
 
     nav {
