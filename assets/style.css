@@ -90,7 +90,7 @@ header h1 {
 }
 
 .hero img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -228,7 +228,7 @@ footer {
 
 .contact-image img {
     background-color: transparent;
-    width: 75%;
+    max-width: 75%;
     height: auto;
 }
 
@@ -354,7 +354,7 @@ footer span {
 
     .secondary-projects .project-img {
         transform: translateY(-4rem);
-        /* width: 90% */
+        max-width: 90%
     }
 }
 
@@ -377,7 +377,7 @@ footer span {
     }
 
     .contact-image img {
-        /* width: 50%; */
+        max-width: 50%;
     }
 
   }
@@ -399,7 +399,7 @@ footer span {
     }
 
     .hero img {
-        /* width: 70%; */
+        max-width: 70%;
         padding-bottom: 5%;
     }
 
@@ -431,7 +431,7 @@ footer span {
 
     .primary-project .project-img {
         transform: translateY(-4rem);
-        width: 90%
+        max-width: 90%
     }
 
   }
