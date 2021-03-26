@@ -354,7 +354,7 @@ footer span {
 
     .secondary-projects .project-img {
         transform: translateY(-4rem);
-        width: 90%
+        /* width: 90% */
     }
 }
 
@@ -377,7 +377,7 @@ footer span {
     }
 
     .contact-image img {
-        width: 50%;
+        /* width: 50%; */
     }
 
   }
@@ -399,7 +399,7 @@ footer span {
     }
 
     .hero img {
-        width: 70%;
+        /* width: 70%; */
         padding-bottom: 5%;
     }
 
