@@ -84,7 +84,6 @@ header h1 {
 }
 
 .hero-right {
-    display: flex;
     flex: 40%;
     padding-left: 5%;
 }
