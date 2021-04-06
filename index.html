@@ -4,133 +4,137 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Michael Knowlton | Full-Stack Software Developer</title>
-        <meta name="description" content="Michael Knowlton is a full-stack software developer based out of Atlanta, GA, and is currently open to new opportunities.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/reset.css">
-        <link rel="stylesheet" href="./assets/style.css">
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>MK</h1>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Michael Knowlton | Full-Stack Software Developer</title>
+    <meta name="description"
+        content="Michael Knowlton is a full-stack software developer based out of Atlanta, GA, and is currently open to new opportunities.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>MK</h1>
+        </div>
+        <div>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/mknowlton89" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/michael-knowlton-81b0b15a/" target="_blank">LinkedIn</a>
+                <a href="./assets/images/Michael-Knowlton-Resume.pdf" target="_blank">Resume</a>
+                <button onClick="#contact">Contact</button>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+    <nav class="mobile-nav">
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/mknowlton89" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/michael-knowlton-81b0b15a/" target="_blank">LinkedIn</a>
+        <a href="./assets/images/Michael-Knowlton-Resume.pdf" target="_blank">Resume</a>
+        <button onClick="#contact">Contact</button>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-left">
+                <h1>Hi, my name is Michael.</h1>
+                <p>I'm a fullstack software developer based in Atlanta. I'm currently open to new opportunities. Check
+                    out some of my recent projects below.</p>
             </div>
-            <div>
-                <nav>
-                    <a href="#">About</a>
-                    <a href="#">Projects</a>
-                    <button onClick="#">Contact</button>
-                </nav>
-                <button class="hamburger">
-                    <div class="bar"></div>
-                </button>   
-            </div>
-        </header>
-        <nav class="mobile-nav">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <button onClick="#">Contact</button>
-        </nav>
-        <main>
-            <section class="hero">
-                <div class="hero-left">
-                    <h1>Hi, my name is Michael.</h1>
-                    <p>I'm a fullstack software developer based in Atlanta. I'm currently open to new opportunities. Check out some of my recent projects below.</p>
-                </div>
-                <div class="hero-right">
-                    <img src="./assets/images/Button style-bro.png" alt="Michael Knowlton's Headshot"
-                </div>
+            <div class="hero-right">
+                <img src="./assets/images/Button style-bro.png" alt="Michael Knowlton's Headshot" </div>
                 <!-- <div class="down-arrow">
                     <img src="" alt="down-arrow"
                 </div> -->
-            </section>
+        </section>
 
-            <section class="primary-project">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400.png?text=Project+Placeholder+Image" alt="">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dad Joke Generator</h3>
-                        <p>Ever find yourself in need of a good Dad Joke and not sure where to turn? Kiss that feeling goodbye with this </p>
-                        <button class="project-cta">View Project</button>
-                        <!-- <p class="project-languages">HTML CSS JS</p> -->
-                    </div>
+        <section id="projects" class="primary-project">
+            <div class="project-card flex">
+                <div class="project-img">
+                    <img src="./assets/images/Screen Shot 2021-04-06 at 4.28.04 PM.png" alt="">
                 </div>
-            </section>
+                <div class="project-info">
+                    <h3>Is It Trademarked?</h3>
+                    <p>This is a platform that aids entreprenuers in early-stage research of their next idea. Quickly
+                        identify if a brand/slogan is trademarked and if the domain is available. If the domain is
+                        already taken, we'll lookup the WHOIS info so you can contact the domain owner.</p>
+                    <button class="project-cta"
+                        onclick="window.open('https://mknowlton89.github.io/is-it-trademarked/', '_blank')">View Live
+                        Project</button>
+                    <a href="https://github.com/mknowlton89/is-it-trademarked">GitHub Repo</a>
+                    <!-- <p class="project-languages">HTML CSS JS</p> -->
+                </div>
+            </div>
+        </section>
 
-            <section class="secondary-projects">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400.png?text=Project+Placeholder+Image" alt="">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dad Joke Generator</h3>
-                        <p>Ever find yourself in need of a good Dad Joke and not sure where to turn? Kiss that feeling goodbye with this </p>
-                        <button class="project-cta">View Project</button>
-                    </div>
+        <section class="secondary-projects">
+            <div class="project-card">
+                <div class="secondary-project-img">
+                    <img src="./assets/images/Screen Shot 2021-04-06 at 4.52.36 PM.png" alt="">
                 </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400.png?text=Project+Placeholder+Image" alt="">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dad Joke Generator</h3>
-                        <p>Ever find yourself in need of a good Dad Joke and not sure where to turn? Kiss that feeling goodbye with this </p>
-                        <button class="project-cta">View Project</button>
-                    </div>
+                <div class="project-info">
+                    <h3>Dad Joke Generator</h3>
+                    <p>Built upon the icanhazdadjokes open API, this app will return a random Dad Joke on demand. Come
+                        across one you love? Save it to your favorites!</p>
+                    <button class="project-cta"
+                    onclick="window.open('https://mknowlton89.github.io/dadjokegenerator/', '_blank')">View Live
+                        Project</button>
+                    <a href="https://github.com/mknowlton89/dadjokegenerator">GitHub Repo</a>
                 </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400.png?text=Project+Placeholder+Image" alt="">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dad Joke Generator</h3>
-                        <p>Ever find yourself in need of a good Dad Joke and not sure where to turn? Kiss that feeling goodbye with this </p>
-                        <button class="project-cta">View Project</button>
-                    </div>
+            </div>
+            <div class="project-card">
+                <div class="secondary-project-img">
+                    <img src="./assets/images/Screen Shot 2021-04-06 at 4.28.35 PM.png" alt="">
                 </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400.png?text=Project+Placeholder+Image" alt="">
-                    </div>
-                    <div class="project-info">
-                        <h3>Dad Joke Generator</h3>
-                        <p>Ever find yourself in need of a good Dad Joke and not sure where to turn? Kiss that feeling goodbye with this </p>
-                        <button class="project-cta">View Project</button>
-                    </div>
+                <div class="project-info">
+                    <h3>Weather Dashboard</h3>
+                    <p>This is a platform that leverages the OpenWeather API to pull current and future weather
+                        conditions for a particular city.</p>
+                    <button class="project-cta"
+                        onclick="window.open('https://mknowlton89.github.io/weather-dashboard/', '_blank')">View Live
+                        Project</button>
+                    <a href="https://github.com/mknowlton89/weather-dashboard">GitHub Repo</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="contact">
-                <div class="contact-image">
-                    <img src="./assets/images/Contact us-bro.png" alt="">
-                </div>
-                <div class="form">
-                    <h3>Want to get in touch?</h3>
-                    <form>
-                        <div class='name-email'>
-                                <input type="text" placeholder="Name">
-                                <input type="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <!-- <input class="message" type="text" placeholder="Enter your message."> -->
-                            <textarea placeholder="Enter your message."></textarea>
-                        </div>
-                        <div>
-                            <button>Let's Chat</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <h3>Made with <span>&#10084;</span> in ATL</h3>
-        </footer>
-        
-        <script src="./script.js" async defer></script>
-    </body>
+        <section id="contact" class="contact">
+            <div class="contact-image">
+                <img src="./assets/images/Contact us-bro.png" alt="">
+            </div>
+            <div class="form">
+                <h3>Want to get in touch?</h3>
+                <form>
+                    <div class='name-email'>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <!-- <input class="message" type="text" placeholder="Enter your message."> -->
+                        <textarea placeholder="Enter your message."></textarea>
+                    </div>
+                    <div>
+                        <button>Let's Chat</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-footer">
+            <p>770.843.4662 || mknowlton89@gmail.com</p>
+        </div>
+        <h3>Made with <span>&#10084;</span> in ATL</h3>
+    </footer>
+
+    <script src="./script.js" async defer></script>
+</body>
+
 </html>
