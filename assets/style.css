@@ -420,6 +420,8 @@ footer span {
 
     .form {
         width: 95%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .secondary-projects .project-card {
