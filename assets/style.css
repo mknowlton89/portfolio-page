@@ -442,10 +442,12 @@ footer span {
           padding-top: 5%;
       }
 
-      .hero img {
+      .hero img, .contact-image img {
           max-width: 50%;
-        /* height: auto; */
           padding-bottom: 5%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
     }
 
       /* .secondary-projects {
