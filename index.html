@@ -14,6 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_xMn5ZWR3u6FniRaV0vWip");
+        })();
+    </script>
 </head>
 
 <body>
@@ -84,7 +90,7 @@
                     <p>Built upon the icanhazdadjokes open API, this app will return a random Dad Joke on demand. Come
                         across one you love? Save it to your favorites!</p>
                     <button class="project-cta"
-                    onclick="window.open('https://mknowlton89.github.io/dadjokegenerator/', '_blank')">View Live
+                        onclick="window.open('https://mknowlton89.github.io/dadjokegenerator/', '_blank')">View Live
                         Project</button>
                     <a href="https://github.com/mknowlton89/dadjokegenerator">GitHub Repo</a>
                 </div>
@@ -109,16 +115,16 @@
             <div class="contact-image">
                 <img src="./assets/images/Contact us-bro.png" alt="">
             </div>
-            <div class="form">
+            <div id="contact-form" class="form">
                 <h3>Want to get in touch?</h3>
                 <form>
                     <div class='name-email'>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Name" id="fromName" required>
+                        <input type="email" placeholder="Email" id="fromEmail" required>
                     </div>
                     <div>
                         <!-- <input class="message" type="text" placeholder="Enter your message."> -->
-                        <textarea placeholder="Enter your message."></textarea>
+                        <textarea placeholder="Enter your message." id="msg" required></textarea>
                     </div>
                     <div>
                         <button>Let's Chat</button>
